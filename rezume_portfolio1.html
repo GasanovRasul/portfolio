@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме и Портфолио</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Soyuz+Grotesk:wght@400;700&display=swap">
+
+    <style>
+        /* Общие стили */
+        body {
+            font-family: "Montserrat", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f0f0f0;
+            background: linear-gradient(90deg, #000, #3a3b26, #000);
+            background-size: 400% 400%;
+            animation: gradientAnimation 6s infinite alternate;
+        }
+
+        /* Анимация переливания фона */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Заголовки со свечением */
+        header h1, .section h2 {
+            font-family: "Soyuz Grotesk", Arial, sans-serif;
+            margin: 0;
+            font-size: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f0f0f0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            width: 100%;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .column p, .column ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .column ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .column ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Оформление ссылок */
+        a {
+            color: #ff9500;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 0;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #ffb86c;
+            text-shadow: 0 0 10px rgba(255, 148, 0, 0.8);
+        }
+
+        /* Блок контактов - Email и Telegram по центру под заголовком */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: -10px;
+        }
+
+        /* Футер */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Адаптация для мобильных устройств */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Гасанов Расул</h1>
+    <p>Видеограф и Монтажер</p>
+</header>
+
+<div class="container">
+
+    <div class="section about">
+        <h2>Обо мне</h2>
+        <div class="column">
+            <p>Я опытный видеограф и монтажер с более чем 4-летним стажем. Работал с различными проектами, включая съемку для ресторанов, блогеров, образовательных курсов и других коммерческих мероприятий.</p>
+        </div>
+        <div class="column">
+            <p>Моя цель — создать качественный визуальный контент, который помогает моим клиентам достигать успеха.</p>
+        </div>
+    </div>
+
+    <div class="section skills">
+        <h2>Навыки</h2>
+        <div class="column">
+            <ul>
+                <li>Видеосъемка и монтаж</li>
+                <li>Adobe Premiere Pro, After Effects</li>
+                <li>Создание анимаций и эффектов</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li>Обработка и коррекция цвета</li>
+                <li>Креативный подход к проектам</li>
+                <li>Работа с освещением и композицией</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section experience">
+        <h2>Опыт работы</h2>
+        <div class="column">
+            <ul>
+                <li><strong>Фриланс видеограф</strong> (2020–н.в.)</li>
+                <li><strong>Видеограф для курсов</strong> (2022–н.в.)</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><strong>Рекламный видеограф</strong> (2021–2023)</li>
+                <li><strong>Продакшн контента</strong> для брендов</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section portfolio">
+        <h2>Портфолио</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/hanumkka" target="_blank">КЕЙС 1</a></li>
+            <li><a href="https://www.instagram.com/bees.remont" target="_blank">КЕЙС 2</a></li>
+            <li><a href="https://www.instagram.com/ed_stroy" target="_blank">КЕЙС 3</a></li>
+            <li><a href="https://www.instagram.com/rasltv" target="_blank">ЛИЧНАЯ СТРАНИЦА</a></li>
+        </ul>
+    </div>
+
+    <div class="section contact">
+        <h2>Контакты</h2>
+        <div class="contact-links">
+            <p><a href="mailto:gasanov.junior@mail.ru">Email</a></p>
+            <p><a href="https://t.me/Gasanovjr" target="_blank">Telegram</a></p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Гасанов Расул. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
